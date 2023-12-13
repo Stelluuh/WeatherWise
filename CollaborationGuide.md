@@ -1,6 +1,6 @@
 # Collaboration Steps:
 
-1. Clone the Repository: Clone the original repository directly to your local machine.
+1. Clone the Repository(if you haven't already): Clone the original repository directly to your local machine.
     ```bash
     git clone <repository_url>
     ```
