@@ -53,6 +53,34 @@ git push origin <branch_name>
 
 This is a step by step process for using Git and Github.
 
+## Overview
+When we create a new feature we create a branch for that feature first. We put all of our commits of our feature in this new branch. We call this new branch a **feature branch**.
+
+Before a feature goes live, you need another software engineer to review the code.
+
+## How to use Git and GitHub to do code reviews
+
+### Flow:
+1. Create a feature branch
+2. Upload the feature branch to GitHub
+    
+    - First make sure you are on your feature branch
+
+    ```git checkout <branch_name>```
+    
+    - Then upload using git push:
+
+    ```git push origin <branch_name>```
+
+
+3. Create a Pull Request for code reviews
+
+    - Go to GitHub, refresh the page. If you press the main dropdown button, you should see the feature branch that you pushed. You should see a Compare & pull request button. 
+
+4. Merge feature branch into main branch. (Merging happens on GitHub).
+
+
+
 
 # Understanding and Interpreting Git Branch Information
 
