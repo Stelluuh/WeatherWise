@@ -49,6 +49,10 @@ git push origin <branch_name>
     - Click the "Create pull request" button.
 
 
+# Feature Branch Work Flow
+
+This is a step by step process for using Git and Github.
+
 
 # Understanding and Interpreting Git Branch Information
 
