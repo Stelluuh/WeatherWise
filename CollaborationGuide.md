@@ -98,6 +98,31 @@ Before a feature goes live, you need another software engineer to review the cod
 
 depending on the rules of the project, it may be set to where at least one member of the team needs to accept and then merge the request. Other times, its not required and you are able to click on ```Merge pull request``` botton.
 
+5. Update Local Repository After Merge
+
+Once we merge the feature branches onto github, we want to go back and sync those changes back to our local repository. The command for doing this is ```git pull```.
+- first make sure you are in your main branch
+
+```bash
+git checkout main
+```
+- Then pull the changes
+
+```bash
+git pull origin main
+```
+
+To make sure that your local branch is in sync with your remote repository, use the command:
+
+```bash
+git log --all --graph
+```
+and if you see 
+
+```HEAD -> main, origin/main```
+
+that confirms it.
+
 # Understanding and Interpreting Git Branch Information
 
 In this section, we will delve into the significance of branch information and provide guidance on how to interpret and read Git branch details. Specifically, we will focus on the information enclosed in parentheses, such as "(HEAD -> CollaborationGuide, origin/main, main)", breaking down each component and elucidating its role in the Git version control system. This knowledge will empower you to navigate and comprehend branch-related details within a Git repository effectively.
@@ -112,13 +137,11 @@ When you create a new branch (ex: stella), the above reading says that you are c
 
 There will be times where you will see something like this:
 
-```bash
-    HEAD -> main, origin/main
-```
+```HEAD -> main, origin/main```
+
             OR
-```bash
-    HEAD -> CollaborationGuide, origin/CollaborationGuide
-```
+            
+```HEAD -> CollaborationGuide, origin/CollaborationGuide```
 
 
 Anytime you see **origin** that refers to Github. In your local repository (computer), you have a main branch and you have a feature branch called ```CollaborationGuide```. When you upload the feature branch, CollaborationGuide, to github, ```origin/CollaborationGuide``` is the result of you uploading that feature branch to GitHub.
