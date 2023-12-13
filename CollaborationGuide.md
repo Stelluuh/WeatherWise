@@ -147,3 +147,5 @@ There will be times where you will see something like this:
 
 
 Anytime you see **origin** that refers to Github. In your local repository (computer), you have a main branch and you have a feature branch called ```CollaborationGuide```. When you upload the feature branch, CollaborationGuide, to github, ```origin/CollaborationGuide``` is the result of you uploading that feature branch to GitHub.
+
+
