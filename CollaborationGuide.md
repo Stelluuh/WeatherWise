@@ -24,6 +24,8 @@ a. Ensure you have the latest changes from the main branch:
 ```bash
 git pull origin main
 ```
+**This should be done consistently to make sure that what you have in your local repository matches what is on github**
+
 b. Create a new branch for your feature:
 ```bash
 git branch <branch_name> OR git checkout -b <branch_name>
@@ -140,7 +142,7 @@ There will be times where you will see something like this:
 ```HEAD -> main, origin/main```
 
             OR
-            
+
 ```HEAD -> CollaborationGuide, origin/CollaborationGuide```
 
 
