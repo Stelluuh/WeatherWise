@@ -109,3 +109,16 @@ When we check our version history, you can see we have HEAD and its pointing to 
 ```HEAD -> main, stella```
 
 When you create a new branch (ex: stella), the above reading says that you are currently working on your main branch, and then we have a copy of your version history and this copy is called 'stella'. You can checkout the 'stella' branch by using ```git checkout branch_name```.
+
+There will be times where you will see something like this:
+
+```bash
+    HEAD -> main, origin/main
+```
+            OR
+```bash
+    HEAD -> CollaborationGuide, origin/CollaborationGuide
+```
+
+
+Anytime you see **origin** that refers to Github. In your local repository (computer), you have a main branch and you have a feature branch called ```CollaborationGuide```. When you upload the feature branch, CollaborationGuide, to github, ```origin/CollaborationGuide``` is the result of you uploading that feature branch to GitHub.
