@@ -76,7 +76,7 @@ Before a feature goes live, you need another software engineer to review the cod
 3. Create a Pull Request for code reviews
 
     - Go to GitHub, refresh the page. If you press the main dropdown button, you should see the feature branch that you pushed. You should see a Compare & pull request button. 
-    ![Alt text](image.png)
+    ![Alt text](/MD_Images/image.png)
     
     You can simply click on "Compare and & Pull Request".
 
@@ -89,11 +89,11 @@ Before a feature goes live, you need another software engineer to review the cod
     - Under comparing changes, you should see 2 drop down boxes. Make sure the first is on main, and the second is the feature branch you are merging:
 
     ```base:main <- compare: CollaborationGuide```
-    ![Alt text](image-1.png)
+    ![Alt text](/MD_Images/image-1.png)
 
     - click on Create pull request.
     - Fill the description to describe the changes:
-    ![Alt text](image-2.png)
+    ![Alt text](/MD_Images/image-2.png)
     - click on 'Create pull request'
 
 depending on the rules of the project, it may be set to where at least one member of the team needs to accept and then merge the request. Other times, its not required and you are able to click on ```Merge pull request``` botton.
