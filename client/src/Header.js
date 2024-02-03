@@ -2,12 +2,24 @@ import { useState, useEffect } from "react";
 
 const Header = () => {
 
-    const [isNightTime, setisNightTime] = useState(new Date().getHours >= 18 || new Date().getHours() < 6)
+    const [isNightTime, setisNightTime] = useState(new Date().getHours() >= 18 || new Date().getHours() < 6)
     const [isLoggedIn, setIsLoggedIn] = useState(false)
 
     
     useEffect(() => {
+
+        const checkIsNightTime = () => {
+            const hour = new Date().getHours();
+            setisNightTime((hour >= 18 || hour < 6))
+        }
+
         document.body.className = isNightTime ? 'night-mode' : 'light-mode'
+
+        const intervalId = setInterval(checkIsNightTime, 10 * 60000);
+        // const intervalId = setInterval(checkIsNightTime, 30 * 60000);
+
+        return () => clearInterval(intervalId)
+
     },[isNightTime])
 
     
