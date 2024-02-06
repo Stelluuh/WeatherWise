@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   # route to test your configuration
   get '*path',
       to: 'fallback#index',
